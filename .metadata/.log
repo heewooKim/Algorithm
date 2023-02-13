@@ -1,0 +1,981 @@
+!SESSION 2023-02-10 16:15:22.383 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.mylyn.ui 4 0 2023-02-10 16:15:41.488
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.mylyn.ui [293]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.20.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="[3.20.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.24.2.v20180905-0014"; singleton:="true"
+       org.eclipse.mylyn.team.ui [637]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2023-02-10 16:15:41.490
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [604]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.context.tasks.ui 4 0 2023-02-10 16:15:41.496
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.context.tasks.ui [618]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.java.tasks 4 0 2023-02-10 16:15:41.504
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.tasks [626]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.bugs 4 0 2023-02-10 16:15:41.510
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.bugs [631]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2023-02-10 16:15:41.515
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.ui [636]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+       org.eclipse.mylyn.commons.notifications.feed [1098]
+         Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+           -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+              com.sun.xml.bind [1013]
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                  -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                     jakarta.activation [1014]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.team.ui 4 0 2023-02-10 16:15:41.521
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.team.ui [637]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.wikitext.tasks.ui 4 0 2023-02-10 16:15:41.527
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.wikitext.tasks.ui [652]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.local 4 0 2023-02-10 16:15:41.535
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.local [740]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.core; bundle-version="5.6.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.connector.process; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.connector.process; bundle-version="4.5.100.201901312304"; singleton:="true"
+       org.eclipse.tm.terminal.connector.process [741]
+         Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+           -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.2.200.202204200013"; version="5.7.0"
+              org.eclipse.cdt.core.native [1019]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.2.200.202204200013"; version="5.7.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.process 4 0 2023-02-10 16:15:41.539
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.process [741]
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.2.200.202204200013"; version="5.7.0"
+       org.eclipse.cdt.core.native [1019]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.spawner; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.spawner; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.2.200.202204200013"; version="5.7.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.tigris.subversion.subclipse.mylyn 4 0 2023-02-10 16:15:41.807
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.tigris.subversion.subclipse.mylyn [967]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="[3.0.0,4.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.24.2.v20180905-0014"; singleton:="true"
+       org.eclipse.mylyn.team.ui [637]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [636]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [1098]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [1013]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   jakarta.activation [1014]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.0.0,4.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.genuitec.eclipse.codetogether.ui.client 4 0 2023-02-10 16:15:41.813
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.codetogether.ui.client [980]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core
+    -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+       org.eclipse.tm4e.core [1039]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.ui
+    -> Bundle-SymbolicName: org.eclipse.tm4e.ui; bundle-version="0.5.1.202205101731"; singleton:="true"
+       org.eclipse.tm4e.ui [1041]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+           -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.registry
+    -> Bundle-SymbolicName: org.eclipse.tm4e.registry; bundle-version="0.5.1.202205101731"; singleton:="true"
+       org.eclipse.tm4e.registry [1040]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+           -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.genuitec.eclipse.tm4e.languageconfiguration 4 0 2023-02-10 16:15:41.996
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.tm4e.languageconfiguration [1004]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.registry
+    -> Bundle-SymbolicName: org.eclipse.tm4e.registry; bundle-version="0.5.1.202205101731"; singleton:="true"
+       org.eclipse.tm4e.registry [1040]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+           -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+              org.eclipse.tm4e.core [1039]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.ui
+    -> Bundle-SymbolicName: org.eclipse.tm4e.ui; bundle-version="0.5.1.202205101731"; singleton:="true"
+       org.eclipse.tm4e.ui [1041]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+           -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core
+    -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.cdt.core.native 4 0 2023-02-10 16:15:41.997
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.core.native [1019]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm4e.core 4 0 2023-02-10 16:15:41.997
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm4e.core [1039]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm4e.registry 4 0 2023-02-10 16:15:41.998
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm4e.registry [1040]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+    -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+       org.eclipse.tm4e.core [1039]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm4e.ui 4 0 2023-02-10 16:15:41.999
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm4e.ui [1041]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+    -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+       org.eclipse.tm4e.core [1039]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm4e.registry
+    -> Bundle-SymbolicName: org.eclipse.tm4e.registry; bundle-version="0.5.1.202205101731"; singleton:="true"
+       org.eclipse.tm4e.registry [1040]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm4e.core; bundle-version="0.4.4"
+           -> Bundle-SymbolicName: org.eclipse.tm4e.core; bundle-version="0.4.4.202205101731"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.notifications.feed 4 0 2023-02-10 16:15:41.999
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.notifications.feed [1098]
+  Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+    -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+       com.sun.xml.bind [1013]
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+           -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+              jakarta.activation [1014]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.batch 4 0 2023-02-10 16:15:42.000
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.batch [1137]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.config.ui [1166]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [636]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [1098]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [1013]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   jakarta.activation [1014]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.batch.graph
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.batch.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.config.ui 4 0 2023-02-10 16:15:42.000
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.config.ui [1166]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.metadata 4 0 2023-02-10 16:15:42.001
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.metadata [1174]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui 4 0 2023-02-10 16:15:42.001
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui [1181]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.webflow.ui.editor [1182]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.config.ui [1166]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+                     org.eclipse.mylyn.tasks.ui [636]
+                       Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+                            org.eclipse.mylyn.commons.notifications.feed [1098]
+                              Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                                -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                                   com.sun.xml.bind [1013]
+                                     Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                                     Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                                     Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                                     Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                       -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                          jakarta.activation [1014]
+                                            Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.graph
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.graph; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.graph"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.webflow.ui.graph [1183]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor
+           -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow
+           -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui.editor 4 0 2023-02-10 16:15:42.003
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui.editor [1182]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.config.ui [1166]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [636]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [1098]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [1013]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   jakarta.activation [1014]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui.graph 4 0 2023-02-10 16:15:42.009
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui.graph [1183]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.webflow.ui.editor [1182]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.config.ui [1166]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+                     org.eclipse.mylyn.tasks.ui [636]
+                       Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+                            org.eclipse.mylyn.commons.notifications.feed [1098]
+                              Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                                -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                                   com.sun.xml.bind [1013]
+                                     Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                                     Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                                     Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                                     Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                       -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                          jakarta.activation [1014]
+                                            Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.11.201912160804-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2023-02-10 16:15:42.014
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1204]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.dashboard.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.dashboard.ui; bundle-version="3.9.11.201912160745-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.dashboard.ui [1209]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [636]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [1098]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [1013]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   jakarta.activation [1014]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springsource.ide.eclipse.dashboard.ui 4 0 2023-02-10 16:15:42.018
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.dashboard.ui [1209]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.7.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [636]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [1098]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [1013]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="jakarta.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            jakarta.activation [1014]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1769)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2023-02-10 16:16:30.112
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.ui 2 0 2023-02-10 16:16:30.747
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-02-10 16:16:30.747
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY org.eclipse.egit.core 1 0 2023-02-10 16:16:30.941
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.core.filebuffers 4 0 2023-02-10 16:16:31.015
+!MESSAGE The content type with id "com.genuitec.eclipse.codetogether.type" specified in the extension point does not exist.
+
+!ENTRY org.eclipse.core.filebuffers 4 0 2023-02-10 16:16:31.017
+!MESSAGE The content type with id "com.genuitec.eclipse.codetogether.type" specified in the extension point does not exist.
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2023-02-10 16:16:31.447
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2023-02-10 16:16:31.464
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2023-02-10 16:16:32.392
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-10 16:16:32.392
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@434896b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e5d40a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-10 16:16:40.712
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\geotwo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2023-02-10 16:16:41.325
+!MESSAGE Invalid preference category path: org.eclipse.mylyn.preferencePages.Mylyn (bundle: org.eclipse.mylyn.context.ui, page: org.eclipse.mylyn.context.ui.preferences)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2023-02-10 16:16:56.554
+!MESSAGE Initializing CodeMix Engine's settings file at D:\Algorithm\.metadata\codemix.code-workspace
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2023-02-10 16:16:56.574
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2023-02-10 16:16:56.579
+!MESSAGE IntegrityCheck: Artifacts located at: [C:\Users\geotwo\1팀 설치\1팀 설치\eclipse-jee-2019-06-R-win32-x86_64\eclipse\artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2023-02-10 16:16:56.635
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 4 0 2023-02-10 16:16:56.795
+!MESSAGE Unable to parse processes from [C:\Users\geotwo\1팀 설치\1팀 설치\jdk\zulu8.38.0.13-ca-jdk8.0.212-win_x64\zulu8.38.0.13-ca-jdk8.0.212-win_x64\bin\javaw.exe  6804             16776      ]
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.findProcesses(EmbeddedEngine.java:271)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.findOrphanedEngines(EmbeddedEngine.java:216)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.run(EmbeddedEngine.java:65)
+	at com.genuitec.eclipse.code.core.engine.app.EngineManager.run(EngineManager.java:231)
+	at com.genuitec.eclipse.code.core.engine.app.EngineManager.initialize(EngineManager.java:108)
+	at com.genuitec.eclipse.code.core.engine.EngineService.start(EngineService.java:193)
+	at com.genuitec.eclipse.code.ui.CodeService.start(CodeService.java:373)
+	at com.genuitec.eclipse.code.ui.EngineStartupHandler$1.run(EngineStartupHandler.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.eclipse.code.core 4 0 2023-02-10 16:16:56.796
+!MESSAGE Unable to parse processes from [C:\Users\geotwo\1팀 설치\1팀 설치\eclipse-jee-2019-06-R-win32-x86_64\eclipse\eclipse.exe                                     2424             5440       ]
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.findProcesses(EmbeddedEngine.java:271)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.findOrphanedEngines(EmbeddedEngine.java:216)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.run(EmbeddedEngine.java:65)
+	at com.genuitec.eclipse.code.core.engine.app.EngineManager.run(EngineManager.java:231)
+	at com.genuitec.eclipse.code.core.engine.app.EngineManager.initialize(EngineManager.java:108)
+	at com.genuitec.eclipse.code.core.engine.EngineService.start(EngineService.java:193)
+	at com.genuitec.eclipse.code.ui.CodeService.start(CodeService.java:373)
+	at com.genuitec.eclipse.code.ui.EngineStartupHandler$1.run(EngineStartupHandler.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2023-02-10 16:16:56.961
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY com.genuitec.eclipse.code.livechat.core 4 0 2023-02-10 16:16:57.675
+!MESSAGE Received status code [404] trying to synchronize thread
+!STACK 0
+java.io.IOException: Received status code [404] trying to synchronize thread
+	at com.genuitec.eclipse.code.livechat.client.LiveChatCometdClient.isAgentAvailable(LiveChatCometdClient.java:926)
+	at com.genuitec.eclipse.code.livechat.core.ThreadService.isAgentAvailable(ThreadService.java:328)
+	at com.genuitec.eclipse.code.livechat.ui.LiveChatHandler.isAgentAvailable(LiveChatHandler.java:51)
+	at com.genuitec.eclipse.code.ui.CodeUI.isLiveChatAgentAvailable(CodeUI.java:692)
+	at com.genuitec.eclipse.code.ui.problem.PopupHandler$1.run(PopupHandler.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
